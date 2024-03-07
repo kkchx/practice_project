@@ -1,6 +1,7 @@
 def cal_bmi(weight,height):
-    return round(weight/(height/100)**2,1)
-
+    result = round(weight/(height/100)**2,1)
+    if result < 18.5
+    return result
 
 weight = int(input("Enter weight: "))
 height = int(input("Enter the height: "))
