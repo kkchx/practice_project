@@ -42,8 +42,9 @@ def display_apod_info(data):
 
 # Replace 'your_api_key' with your NASA APOD API key
 api_key = 'DEMO_KEY'
-
-# Get user input for the desired date
-user_date = input("Enter a date (YYYY-MM-DD) to see the Astronomy Picture of the Day: ")
-
+try:
+    # Get user input for the desired date
+    user_date = input("Enter a date (YYYY-MM-DD) to see the Astronomy Picture of the Day: ")
+except ValueError:
+    print("Please enter numbers")
 get_apod(api_key, user_date)
