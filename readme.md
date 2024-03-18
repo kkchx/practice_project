@@ -1,10 +1,10 @@
 # Body mass index
 This project calculates **BMI** (body mass index) based on input data:
 1.Body mass (kg)
-2.Height (m)
+2.Height (cm)
 
 ## How to calculate BMI
-BMI = body mass, kg/height 
+BMI = body mass, kg/height^2
 
 ## How to interpret BMI
 If your BMI is:
