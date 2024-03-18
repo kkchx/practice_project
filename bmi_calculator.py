@@ -4,7 +4,7 @@ try:
         return result
 
     def ana_li_ze():
-        result = cal_bmi(weight,height)
+        result = cal_bmi(weight,height) # this is extra
         if result < 18.5:
             print("you're underweight")
         elif result < 24.9:
@@ -17,6 +17,8 @@ try:
 
     weight = int(input("Enter weight: "))
     height = int(input("Enter the height: "))
-    print("Your bmi is",cal_bmi(weight,height),ana_li_ze())
+    # create a global BMI var
+    bmi = cal_bmi(weight,height)
+    print("Your bmi is",bmi,ana_li_ze())
 except ValueError:
     print("Please enter number")
