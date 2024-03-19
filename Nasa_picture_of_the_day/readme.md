@@ -1,5 +1,5 @@
 # Picture of the day
-This project get the astromy picture from **API** sent to the nasa website based on input data:
+This project get the astronomy picture from **API** sent to the NASA website based on input data:<br>
 1.date (YYYY-MM-DD)
 
 ## How to get astronomy picture
@@ -9,7 +9,7 @@ This project get the astromy picture from **API** sent to the nasa website based
 4.the website sent back the response
 
 ## How to interpret the response
-date = the date you input
-title = title of the picture
-explanation = the explanation of the picture
-url = the url of the picture
+date = the date you input <br>
+title = title of the picture <br>
+explanation = the explanation of the picture <br>
+url = the url of the picture<br>

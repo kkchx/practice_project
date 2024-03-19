@@ -5,8 +5,14 @@ suits = ['Hearts','Diamonds','Clubs','Spades']
 
 
 def compare_cards(card1, card2):
+    # compare two cards and return
+    # 1 if the card is higher
+    # -1 if the card is lower
+    # in all other cases
     rank_order = ranks.index(card1['rank']) - ranks.index(card2['rank'])
     return 1 if rank_order > 0 else -1 if rank_order < 0 else 0
+
+
 deck = [{'rank': rank, 'suit': suit}for rank in ranks for suit in suits]
 random.shuffle(deck)
 score = 0
