@@ -1,6 +1,7 @@
 # Higher or Lower
-This project is a card game to decide you win or not based on input data: <br>
-1.user input
+1.This project is a card game to decide you win or not based on input data: <br>
+    1.user input<br>
+2.Guess a number between 0 to 100
 
 ## How to calculate score
 1.the game shuffle the card <br>
