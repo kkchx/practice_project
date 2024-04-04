@@ -1,6 +1,6 @@
 import unittest
 from Game import check_win
-
+from Game import check_tie
 
 class MyTestCase(unittest.TestCase):
     def test_1horizontal_win(self):
@@ -68,5 +68,26 @@ class MyTestCase(unittest.TestCase):
             ["X", "O", "X"]]
         player = "X"
         self.assertTrue(check_win(player, board))  # add assertion here
+
+    def test_full_board_no_tie(self):
+        board = [
+            ["O"," ","O"],
+            ["O","X","X"],
+            ["X","X","O"]]
+        self.assertFalse(check_tie(board)) # add assertion here
+
+    def test_full_board_with_tie(self):
+        board = [
+            ["X","O","X"],
+            ["X","O","O"],
+            ["O","X","O"]]
+        self.assertTrue(check_tie(board)) # add assertion here
+
+    def test_full_board_with_many_spaces(self):
+        board = [
+            [" ","O","O"],
+            [" ","O","X"],
+            ["X","X","O"]]
+        self.assertFalse(check_tie(board)) # add assertion here
 if __name__ == '__main__':
     unittest.main()

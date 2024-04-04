@@ -28,7 +28,6 @@ def ask_and_make_move(player, board):
         x, y = ask_move(player)
         if make_move(player, board, x, y):
             break
-
 def check_win(player, board):
     # check i wins
     for i in range(3):
@@ -46,7 +45,7 @@ def check_win(player, board):
 
 
 def check_tie(board):
-    return False
+    return not any(" " in row for row in board)
 
 
 def tic_tac_toe():
@@ -59,6 +58,7 @@ def tic_tac_toe():
             ask_and_make_move(player, board)
             if check_win(player, board):
                 print(f"{player} wins!")
+                draw_board(board)
                 break
             if check_tie(board):
                 print("It's a tie!")
