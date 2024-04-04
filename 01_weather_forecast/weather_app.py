@@ -27,22 +27,16 @@ def get_weather_data(city_name, api_key):
         return False
 
 def display_weather_data(weather_data):
-    # temperature = weather_data['main']['temp']
-    # sunrise_timestamp = weather_data['sys']['sunrise']
-    #
-    # print(f'Temperature: {temperature} C')
-    #
-    # print(f'Sunrise: {sunrise_timestamp}')
-    City = " "
-    Country = " "
+    City = get_city_name()
+    Country = weather_data['sys']['country']
     Temperature = weather_data['main']['temp']
-    Feels_like = " "
-    Cloud_Conditions = " "
-    Humidity = " "
-    Altitude = " "
+    Feels_like = weather_data['main']['feels_like']
+    Cloud_Conditions = weather_data['weather'],0,['description']
+    Humidity = weather_data['main']['humidity']
+    Altitude = weather_data['main']['sea_level']
     print(f"\nCity: {City}, {Country}")
-    print(f"Temperature: {Temperature}")
-    print(f"Feels like: {Feels_like}")
+    print(f"Temperature: {Temperature} C")
+    print(f"Feels like: {Feels_like} C")
     print(f"Cloud Conditions: {Cloud_Conditions}")
     print(f"Humidity: {Humidity}")
     print(f"Altitude: {Altitude}")
