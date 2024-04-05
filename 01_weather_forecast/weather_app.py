@@ -27,13 +27,16 @@ def get_weather_data(city_name, api_key):
         return False
 
 def display_weather_data(weather_data):
-    City = get_city_name()
+    City = weather_data['name']
     Country = weather_data['sys']['country']
     Temperature = weather_data['main']['temp']
     Feels_like = weather_data['main']['feels_like']
-    Cloud_Conditions = weather_data['weather'],0,['description']
+    Cloud_Conditions = weather_data['weather'][0]['description']
     Humidity = weather_data['main']['humidity']
-    Altitude = weather_data['main']['sea_level']
+    try:
+        Altitude = weather_data['main']['sea_level']
+    except KeyError:
+        Altitude = "Not available"
     print(f"\nCity: {City}, {Country}")
     print(f"Temperature: {Temperature} C")
     print(f"Feels like: {Feels_like} C")
