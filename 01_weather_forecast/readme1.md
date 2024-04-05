@@ -1,13 +1,7 @@
 ## Weather App
-This project use your input and return the weather of that city you enter <br>
-**input = city**
-
-## How to get the response
-1. sent the api key to the url <br>
-2. asked user what city to check the weather <br>
-3. created a loop to ask the user city name <br>
-4. display the response <br>
-5. asked user if you want to check another city
+This project Create a console-based weather app, that prompt user for a city (use error-proofing) to check weather to <br>
+Connects to the Weather Server using API to get a response then prints the following information: City, Country, Temp in C, <br>
+Feels like, Cloud Conditions, Humidity, Altitude  lastly asks user if he/she wants to check another city or exit a program (use a loop)
 
 ## How to interpret the response
 1. City = City that you entered <br>
