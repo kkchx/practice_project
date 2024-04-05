@@ -1,5 +1,5 @@
 # Body mass index
-This project calculates **BMI** (body mass index) based on input data:
+This program calculates **BMI** (body mass index) based on input data:
 1.Body mass (kg)
 2.Height (cm)
 

@@ -1,5 +1,5 @@
 # Higher or Lower
-This project is a card game to decide you win or not based on input data: <br>
+This program is a card game to decide you win or not based on input data: <br>
 1.user input
 
 ## How to calculate score

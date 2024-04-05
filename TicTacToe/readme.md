@@ -1,5 +1,5 @@
 ## TicTacToe
-1. This project created a game of tictactoe the input of the user is meant to be decided if you win or not<br>
+1. This program created a game of tictactoe the input of the user is meant to be decided if you win or not<br>
 **input = 1-3**
 
 ## How to get the result

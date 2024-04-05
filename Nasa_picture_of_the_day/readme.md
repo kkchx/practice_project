@@ -1,5 +1,5 @@
 # Picture of the day
-This project get the astronomy picture from **API** sent to the NASA website based on input data:<br>
+This program get the astronomy picture from **API** sent to the NASA website based on input data:<br>
 1.date (YYYY-MM-DD)
 
 ## How to get astronomy picture
