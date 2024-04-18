@@ -43,6 +43,7 @@ def display_weather_data(weather_data):
     print(f"Cloud Conditions: {Cloud_Conditions}")
     print(f"Humidity: {Humidity}")
     print(f"Altitude: {Altitude}")
+
 def main():
     api_key = gets_api_key()
     while True:
