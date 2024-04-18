@@ -1,6 +1,4 @@
-# Higher or Lower
-This program is a card game to decide you win or not based on input data: <br>
-1.user input
+
 
 ## How to calculate score
 1.the game shuffle the card <br>
