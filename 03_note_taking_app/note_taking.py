@@ -1,4 +1,6 @@
 import os
+
+
 def create_note():
     note_name = input("Enter note name: ")
     if note_name.isalnum():
