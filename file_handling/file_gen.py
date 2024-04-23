@@ -35,14 +35,7 @@ def main():
     for i in range(4):
         print(f"{counters[i]} {formats[i]} were created")
     print(f"Total {num_files} were created in {directory}")
-# def total_count(jpg_count, txt_count, pdf_count, doc_count, xls_count):
-#     total = jpg_count+txt_count+pdf_count+doc_count+xls_count
-#     print(f"{jpg_count} jpg created")
-#     print(f"{txt_count} txt created")
-#     print(f"{pdf_count} pdf created")
-#     print(f"{doc_count} doc created")
-#     print(f"{xls_count} xls created")
-#     print(f"Total {total} files created.")
+
 
 if __name__ == "__main__":
     main()

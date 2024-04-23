@@ -1,10 +1,10 @@
 import os
 import shutil
 
-def sort_files_by_size(directory):
+def sort_files_by_size(directory, counters):
     # Subdirectories for sorted files
     subdir_small = os.path.join(directory, "less_than_300kb")
-    subdir_medium = os.path.join(directory, "equal_to_301-700kb")
+    subdir_medium = os.path.join(directory, "medium_301-700kb")
     subdir_large = os.path.join(directory, "more_than_701kb")
 
     # Create subdirectories if they do not exist
@@ -24,23 +24,25 @@ def sort_files_by_size(directory):
 
         if size < 300 * 1024: # less than 300 KB
             shutil.move(file_path, os.path.join(subdir_small, file))
-            print(f"Moved {file} to {subdir_small}")
-        elif size <= 700 * 1024:
+            counters[0]+=1
+        elif 300 * 1024 < size <= 700 * 1024:
             shutil.move(file_path, os.path.join(subdir_medium, file))
-            print(f"Moved {file} to {subdir_medium}")
+            counters[1]+=1
         else: # more than 701 KB
             shutil.move(file_path, os.path.join(subdir_large, file))
-            print(f"Moved {file} to {subdir_large}")
+            counters[2]+=1
 
 def main():
     directory = input("Enter the directory to sort files by size: ")
+    formats = ["less_than_300kb", "medium_301-700kb", "more_than_701kb"]
+    counters = [0, 0, 0]
 
     if not os.path.exists(directory):
         print("Directory does not exist.")
         return
-
-    sort_files_by_size(directory)
-    print("Files have been sorted by size.")
+    sort_files_by_size(directory, counters)
+    for i in range(3):
+        print(f"{counters[i]} files were moved to {formats[i]}")
 
 if __name__ == "__main__":
     main()
