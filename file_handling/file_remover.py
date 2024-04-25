@@ -1,16 +1,17 @@
 import os
-def delete_files_by_extension(directory, extensions, counters):
-    # Normalize the extensions to ensure consistency
-    normalized_extensions = {ext.strip().lower() for ext in extensions.split(",")}
 
-    # List all files in the directory
+def delete_files_by_extension(directory, extensions):
+    normalized_extensions = {ext.strip().lower() for ext in extensions.split(",")}
+    counters = {ext: 0 for ext in normalized_extensions}
+
     files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
 
-    # Filter and delete files with the specified extensions
     for file in files:
-        file_ext = os.path.splitext(file)[1][1:].lower() # Extract extension and convert to lowercase
+        file_ext = os.path.splitext(file)[1][1:].lower()
         if file_ext in normalized_extensions:
             os.remove(os.path.join(directory, file))
+            counters[file_ext] += 1
+    return counters
 
 def main():
     directory = input("Enter the directory from which to delete files: ")
@@ -20,8 +21,9 @@ def main():
         print("Directory does not exist.")
         return
 
-    delete_files_by_extension(directory, extensions, counters)
-    print("Requested files have been deleted.")
+    counters = delete_files_by_extension(directory, extensions)
+    for ext, count in counters.items():
+        print(f"{count} {ext} were deleted.")
 
 if __name__ == "__main__":
     main()
