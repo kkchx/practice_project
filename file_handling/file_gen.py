@@ -16,23 +16,23 @@ def main():
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    formats = ['jpg', 'txt', 'pdf', 'doc', 'xls']
-    counters = [0,0,0,0,0]
+    # formats = ['jpg', 'txt', 'pdf', 'doc', 'xls']
+    extensions = input("Enter the file extensions to create (separated by commas, eg., jpg, txt, doc): ")
+    formats = list({ext.strip().lower() for ext in extensions.split(",")})
+    length_of_formats = len(formats)
+
+    counters = []
+    for item in formats:
+        counters.append(0)
+
     for _ in range(num_files):
         file_format = random.choice(formats) # Choose a random format
         create_random_file(directory, file_format)
-        if file_format == "jpg":
-            counters[0]+=1
-        elif file_format == "txt":
-            counters[1]+=1
-        elif file_format == "pdf":
-            counters[2]+=1
-        elif file_format == "doc":
-            counters[3]+=1
-        elif file_format == "xls":
-            counters[4]+=1
+        for i in range(length_of_formats):
+            if file_format == formats[i]:
+                counters[i]+=1
 
-    for i in range(4):
+    for i in range(length_of_formats):
         print(f"{counters[i]} {formats[i]} were created")
     print(f"Total {num_files} were created in {directory}")
 
