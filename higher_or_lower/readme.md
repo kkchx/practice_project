@@ -1,5 +1,3 @@
-
-
 ## How to calculate score
 1.the game shuffle the card <br>
 2.the game pop card1<br>
