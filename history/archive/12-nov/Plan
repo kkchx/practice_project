@@ -1,0 +1,23 @@
+1. Lab 1: list of integers is generated randomly based on the length entered by user.
+Script should separate it into two lists (even and odd numbers) using a function.
+As a result script prints the source list, even list and a sum of its elements, odd lists and a sum
+of its elements. Time: 15 mins
+
+2. Lab 2: solve a quadratic equation. Print Discriminant, and roots. Time: 15 minutes
+
+3. Finish notepad with functions Edit, bold;
+
+4. XLS = > convert to dictionary
+
+5. read a dictionary from a file and output it into a text
+
+6. Student Management system for Windows
+
+
+HW:
+list of integers is generated randomly based on the length entered by user.
+Script should separate it into two lists (one if the element is divided by 5 and the others with the rest)
+using a function.
+As a result script prints the source list, first list and a multiplication of its elements,
+and second list with multiplication of its elements
+of its elements. Time: 15 mins

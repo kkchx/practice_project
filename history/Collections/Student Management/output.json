@@ -1,0 +1,77 @@
+[
+    {
+        "first_name": "Emma",
+        "last_name": "Smith",
+        "average_grade": 3.27
+    },
+    {
+        "first_name": "Liam",
+        "last_name": "Johnson",
+        "average_grade": 4.12
+    },
+    {
+        "first_name": "Sophia",
+        "last_name": "Brown",
+        "average_grade": 3.68
+    },
+    {
+        "first_name": "Noah",
+        "last_name": "Davis",
+        "average_grade": 4.91
+    },
+    {
+        "first_name": "Olivia",
+        "last_name": "Wilson",
+        "average_grade": 3.45
+    },
+    {
+        "first_name": "Ethan",
+        "last_name": "Lee",
+        "average_grade": 4.55
+    },
+    {
+        "first_name": "Ava",
+        "last_name": "Anderson",
+        "average_grade": 3.76
+    },
+    {
+        "first_name": "Mason",
+        "last_name": "Clark",
+        "average_grade": 4.33
+    },
+    {
+        "first_name": "Isabella",
+        "last_name": "Hall",
+        "average_grade": 4.69
+    },
+    {
+        "first_name": "Lucas",
+        "last_name": "Garcia",
+        "average_grade": 3.84
+    },
+    {
+        "first_name": "Mia",
+        "last_name": "Patel",
+        "average_grade": 4.28
+    },
+    {
+        "first_name": "Oliver",
+        "last_name": "Williams",
+        "average_grade": 4.09
+    },
+    {
+        "first_name": "Harper",
+        "last_name": "Taylor",
+        "average_grade": 3.11
+    },
+    {
+        "first_name": "Aiden",
+        "last_name": "Martinez",
+        "average_grade": 4.62
+    },
+    {
+        "first_name": "Charlotte",
+        "last_name": "Wright",
+        "average_grade": 4.37
+    }
+]

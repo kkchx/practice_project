@@ -1,0 +1,14 @@
+Install the packaging tool you prefer. For PyInstaller, you can use pip install pyinstaller,
+and for cx_Freeze, use pip install cx_Freeze.
+
+Create a Python script for your Tkinter application. Make sure it's a standalone script
+that includes the necessary import statements and defines your GUI.
+
+Open your command line or terminal and navigate to the directory where your script is located.
+
+Use the packaging tool to create an executable. For PyInstaller,
+you can run pyinstaller --onefile your_script.py.
+For cx_Freeze, you'll need to create a setup script to specify the options,
+and then run cxfreeze your_script.py.
+
+After the packaging process is complete, you'll find the executable file in a "dist" or "build" directory.

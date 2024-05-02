@@ -1,0 +1,17 @@
+Try PIP in console, try creating executable
+
+2. XLS = > convert to dictionary (Collections=>Student Management)
+
+3. read a dictionary from a file and output it into a text (Collections=Student management)
+
+4. Student Management system for Windows add opening and saving buttons
+
+5. numpy
+
+HW:
+list of integers is generated randomly based on the length entered by user.
+Script should separate it into two lists (one if the element is divided by 5 and the others with the rest)
+using a function.
+As a result script prints the source list, first list and a multiplication of its elements,
+and second list with multiplication of its elements
+of its elements. Time: 15 mins

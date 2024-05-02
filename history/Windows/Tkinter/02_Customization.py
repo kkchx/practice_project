@@ -1,0 +1,57 @@
+import tkinter as tk
+
+window = tk.Tk()
+
+label = tk.Label(
+    text="Hello, Tkinter",
+    foreground="white",  # Set the text color to white
+    background="black"  # Set the background color to black
+)
+
+'''
+lbl_customized = tk.Label(
+    text="Hello, Tkinter",
+    fg="orange",
+    bg="purple",
+    width=10,
+    height=10
+)
+'''
+label.pack()
+#lbl_customized.pack()
+
+
+
+
+
+window.mainloop()
+
+
+"""
+Carry on to practice the following elements
+#1 Button
+button = tk.Button(
+    text="Click me!",
+    width=25,
+    height=5,
+    bg="blue",
+    fg="yellow",
+    
+
+#Frames
+
+frame_a = tk.Frame()
+frame_b = tk.Frame()
+
+label_a = tk.Label(master=frame_a, text="I'm in Frame A")
+label_a.pack()
+
+label_b = tk.Label(master=frame_b, text="I'm in Frame B")
+label_b.pack()
+
+frame_a.pack()
+frame_b.pack()
+
+window.mainloop()
+
+"""
